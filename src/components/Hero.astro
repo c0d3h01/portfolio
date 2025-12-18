@@ -1,0 +1,175 @@
+<section class="hacker-hero">
+  <div class="terminal">
+    <div class="terminal-bar">
+      <div class="dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="user-info">harshal@sawant: ~</div>
+    </div>
+
+    <div class="terminal-window">
+      <div class="command-line">
+        <span class="prompt">root@c0d3h01:~$</span>
+        <span class="typing">ripgrep harshal_sawant</span>
+      </div>
+
+      <div class="data-dump">
+        <h1 class="main-title">HARSHAL SAWANT</h1>
+        <p class="role">>> SYSTEM_ARCHITECT / FULL_STACK_DEV</p>
+
+        <div class="bio">
+          <p>STATUS: [ Available_for_Collaboration ]</p>
+          <p>LOC: [ Mumbai, IN ]</p>
+          <p>STACK: [ Astro, React, Node.js, TypeScript ]</p>
+        </div>
+
+        <div class="terminal-links">
+          <a href="https://github.com/c0d3h01" target="_blank"
+            >[ GITHUB ]</a
+          >
+          <a href="https://linkedin.com/in/haarshalsawant" target="_blank"
+            >[ LINKEDIN ]</a
+          >
+          <a href="mailto:harshalsawant.dev@gmail.com">[ SEND_MESSAGE ]</a>
+        </div>
+      </div>
+
+      <div class="footer-line">
+        <span class="prompt">root@c0d3h01:~$</span>
+        <span class="cursor">_</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hacker-hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  .terminal {
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid #333;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 50px rgba(0, 255, 65, 0.1);
+  }
+
+  .terminal-bar {
+    background: #1a1a1a;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+  }
+
+  .dots {
+    display: flex;
+    gap: 6px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.6;
+  }
+  .red {
+    background: #ff5f56;
+  }
+  .yellow {
+    background: #ffbd2e;
+  }
+  .green {
+    background: #27c93f;
+  }
+  .user-info {
+    font-size: 0.7rem;
+    color: #666;
+  }
+
+  .terminal-window {
+    padding: clamp(1.5rem, 5vw, 3rem);
+  }
+
+  .prompt {
+    color: var(--green);
+    margin-right: 12px;
+  }
+  .typing {
+    color: #fff;
+  }
+
+  .data-dump {
+    margin: 2rem 0;
+  }
+
+  .main-title {
+    font-size: clamp(2rem, 8vw, 4rem);
+    color: var(--green);
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
+  }
+
+  .role {
+    color: var(--dim-green);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .bio {
+    border-left: 2px solid #222;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    color: #888;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .terminal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .terminal-links a {
+    color: var(--green);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: 0.2s;
+  }
+
+  .terminal-links a:hover {
+    background: var(--green);
+    color: #000;
+  }
+
+  .footer-line {
+    margin-top: 2rem;
+  }
+  .cursor {
+    color: var(--green);
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .terminal-links {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+</style>
